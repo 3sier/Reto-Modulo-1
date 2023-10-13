@@ -1,4 +1,5 @@
 * {
+  font-family: "Fraunces", serif;
   font-family: "Montserrat", sans-serif; /* Use the Montserrat font */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove padding */
@@ -66,8 +67,8 @@ li a {
   bottom: 0; /* Place the navbar at the bottom of the page */
   width: 100%; /* Full width */
   background-color: #333; /* Black background color */
-  color: white; /* White text color */
-  padding: 20px 0px; /* Some padding */
+  color: white;
+  padding: 20px 0px;
 }
 .row {
   display: flex; /* Use flexbox to align elements horizontally */
@@ -86,6 +87,103 @@ li a {
   margin-bottom: 10px; /* Add margin for spacing between rows */
 }
 
+/* Desktop styles */
+@media (min-width: 768px) {
+  #search {
+    font-size: larger;
+  }
+
+  .buttons {
+    height: 50px;
+    width: 100px;
+    font-size: larger;
+  }
+}
+#letterInput {
+  height: 50px;
+  width: 500px;
+  border-style: none;
+  font-size: larger;
+}
+.cardPlusMap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background-color: rgb(250, 219, 172);
+}
+
+.card {
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
 #map {
-  height:600px;
+  height: 400px;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  #search {
+    font-size: larger;
+  }
+}
+#button {
+  height: 50px;
+  width: 100px;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#letterInput {
+  height: 50px;
+  width: 500px;
+  border-style: none;
+  font-size: larger;
+}
+.cardPlusMap {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(213, 223, 245);
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+#map {
+  height: 300px;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 4rem; /* Footer height */
+}
+#savedCountryName {
+  margin-top: 50px;
+}
+#savedFlags {
+  margin-top: 10px;
+}
+#favouriteList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#favouriteList button {
+  margin-top: 10px;
 }
