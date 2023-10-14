@@ -111,7 +111,6 @@ li a {
   grid-gap: 20px;
   background-color: rgb(250, 219, 172);
 }
-
 .card {
   width: 500px;
   border: 1px solid #ccc;
@@ -120,11 +119,9 @@ li a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
 }
-
 #map {
   height: 400px;
 }
-
 /* Mobile styles */
 @media (max-width: 767px) {
   #search {
@@ -139,7 +136,6 @@ li a {
   justify-content: center;
   margin-top: 20px;
 }
-
 #letterInput {
   height: 50px;
   width: 500px;
@@ -151,7 +147,6 @@ li a {
   flex-direction: column;
   background-color: rgb(213, 223, 245);
 }
-
 .card {
   width: 100%;
   border: 1px solid #ccc;
@@ -160,7 +155,6 @@ li a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
 }
-
 #map {
   height: 300px;
 }
@@ -168,7 +162,6 @@ li a {
   position: relative;
   min-height: 100vh;
 }
-
 #content-wrap {
   padding-bottom: 4rem; /* Footer height */
 }
@@ -186,4 +179,7 @@ li a {
 }
 #favouriteList button {
   margin-top: 10px;
+}
+#savedFlags {
+  border: 2.5px solid #ccc;
 }

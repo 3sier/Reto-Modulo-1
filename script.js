@@ -67,8 +67,8 @@ let getRandomElements = function (sourceArray, numberElements) {
                     <p id="population">Population: ${countryInfo.population}</p>
                     <img id="flags" src="${countryInfo.flags.png}"/>
                     `;
-//<img id="flags" src="${countryInfo.flags.png}"/>
-        //    document.getElementById('#flagImage').appendChild()
+          //<img id="flags" src="${countryInfo.flags.png}"/>
+          //    document.getElementById('#flagImage').appendChild()
           map = L.map("map").setView(countryInfo.latlng, 5);
           L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
             maxZoom: 19,
